@@ -1,0 +1,68 @@
+body, html {
+	margin:0;
+	padding:0;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.navbar {
+	margin:0;
+	width:100%;
+}
+
+.navbar ul {
+	display:flex;
+	margin:0;
+	list-style:none;
+	background-color:darkcyan;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.textContainer {
+	display:flex;
+}
+
+.navbar ul li.navText {
+	display:block;
+	padding:20px;
+	color:white;
+	margin:auto 0;
+	cursor:pointer;
+}
+
+.navbar ul li.navText:hover {
+	background-color:#00a5a5;
+}
+
+#dropdownIcon{
+	display:none;
+}
+
+.navbar ul div.imgContainer {
+	margin-top:0;
+}
+
+/************telefonito***********/
+@media screen and (max-width:680px) {
+	.navbar ul li.navText {
+		display:none;
+	}	
+
+	.responsive ul {
+		position:relative;
+		display:block;
+	}
+
+	.responsive .textContainer {
+		flex-direction:column;
+	}
+
+	.responsive ul li.navText {
+		display:block;
+	}
+
+	#dropdownIcon{
+		display:block;
+		font-size:20px;
+	}
+}
