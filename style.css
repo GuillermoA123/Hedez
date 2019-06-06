@@ -4,9 +4,12 @@ body, html {
 	font-family: 'Quicksand', sans-serif;
 }
 
+/**************** navbar ****************/
+
 .navbar {
 	margin:0;
 	width:100%;
+	position:fixed-top;
 }
 
 .navbar a {
@@ -46,10 +49,53 @@ body, html {
 	margin-top:0;
 }
 
+/**************** /navbar ****************/
+
+/**************** Info ****************/
+
+.info {
+	text-align:center;
+	margin: 50px auto;
+}
+
+.info h1, .info h2{
+	color:darkcyan;
+}
+
+.info em {
+	font-size:1.3em;
+}
+
+.info div.textPics {
+	display:flex;
+	justify-content:space-around;
+	margin:40px;
+}
+
+.info div.textPics div.infoText {
+	margin:0 30px;
+	text-align:justify;
+}
+
+.info div.textPics div.infoText p {
+	font-size:1.2em;
+}
+
+.info div.textPics div.infoText h2 {
+	font-size:27px;
+}
+
+.info div.textPics div.imgContainer img{
+	border-radius:5px;
+}
+
+/**************** /Info ****************/
+
+
 /************telefonito***********/
 @media screen and (max-width:960px) {
 
-/****** navbar ******/
+/**************** navbar ****************/
 	.navbar ul li.navText {
 		display:none;
 	}	
@@ -82,7 +128,9 @@ body, html {
 		top:0;
 		right:0;
 	}
-/****** navbar ******/
+/**************** /navbar ****************/
+
+
 }
 
 @media screen and (max-width:290px) {

@@ -8,23 +8,46 @@
 			<meta name="viewport" content="width=device-width,initial-scale=1">
 			<script src="script.js"></script>
 		</head>
-	<body>
-		<nav class="navbar" id="navbar">
-			<ul>
-				<div class="imgContainer">
-					<li class="img"><img height="55" src="logo.png"></li>
+		<header>
+			<nav class="navbar" id="navbar">
+				<ul>
+					<div class="imgContainer">
+						<li class="img"><img height="55" src="logo.png"></li>
+					</div>
+						<div class="textContainer">
+							<a href="#Inicio"><li class="navText">Inicio</li></a>
+							<a href="#Empresa"><li class="navText">La empresa</li></a>		
+							<a href="#"><li class="navText">Servicios</li></a>
+							<a href="#"><li class="navText">Blog</li></a>
+							<a href="#"><li class="navText">Comunícate con nosotros</li></a>
+							<a href="#"><li class="navText">Preguntas frecuentes</li></a>
+							<a href="#"><li class="navText">Portafolio</li></a>
+							<li class="navText" id="dropdownIcon" onclick="dropdownMenu()"><i class="fas fa-bars"></i></li>
+						</div>
+					</ul>
+				</nav>
+			</header>
+		<body>
+			<div class="info" id="Inicio">
+				<h1>¡Bienvenido a Hedez System!</h1>
+				<p><em>Tu mejor aliado en telecomunicaciones y soluciones informáticas empresariales.</em></p>
+			</div>
+			<hr>
+			<div class="info" id="Empresa">
+				<h1>Empresa</h1>
+				<div class="textPics">
+					<div class="imgContainer">
+						<img src="Vision01.jpg" height="400" >
+					</div>
+					<div class="infoText">
+						<h2>Nuestra Vision</h2>
+  						<p>Ofrecer a nuestros clientes un conjunto de herramientas y procesos tecnológicos que permitan la integración de sus productos y servicios a un mundo globalizado, optimizando los costos, mejorando la calidad y la seguridad de sus comunicaciones.</p>
+						<h2>Nuestra Misión</h2>
+  						<p>Ser la empresa de servicios tecnológicos orientada a ofrecer un producto de alta calidad para nuestros clientes, nuestro target es la PYME con necesidades IT, aseguramos una alta eficiencia y compromiso a nivel nacional además de precios competitivos.</p>
+
+					</div>
 				</div>
-				<div class="textContainer">
-					<a href="#"><li class="navText">Inicio</li></a>
-					<a href="#"><li class="navText">La empresa</li></a>	
-					<a href="#"><li class="navText">Servicios</li></a>
-					<a href="#"><li class="navText">Blog</li></a>
-					<a href="#"><li class="navText">Comunícate con nosotros</li></a>
-					<a href="#"><li class="navText">Preguntas frecuentes</li></a>
-					<a href="#"><li class="navText">Portafolio</li></a>
-					<li class="navText" id="dropdownIcon" onclick="dropdownMenu()"><i class="fas fa-bars"></i></li>
-				</div>
-			</ul>
-		</nav>
-	</body>
+			</div>
+			<hr>
+		</body>
 </html>
