@@ -43,7 +43,9 @@ body, html {
 }
 
 /************telefonito***********/
-@media screen and (max-width:680px) {
+@media screen and (max-width:960px) {
+
+/****** navbar ******/
 	.navbar ul li.navText {
 		display:none;
 	}	
@@ -51,6 +53,11 @@ body, html {
 	.responsive ul {
 		position:relative;
 		display:block;
+		padding-left:0px;
+	}
+
+	.responsive ul div.imgContainer {
+		margin-left:30px;
 	}
 
 	.responsive .textContainer {
@@ -65,4 +72,28 @@ body, html {
 		display:block;
 		font-size:20px;
 	}
+
+	.responsive #dropdownIcon {
+		position:absolute;
+		top:0;
+		right:0;
+	}
+/****** navbar ******/
+}
+
+@media screen and (max-width:290px) {
+	.navbar ul div.imgContainer {
+		display:none;
+	}
+
+	.navbar ul {
+		justify-content:flex-end;
+	}
+
+	#dropdownIcon { 
+		float:right;
+		right:0;
+	}
+
+	
 }
