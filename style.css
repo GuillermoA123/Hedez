@@ -9,6 +9,10 @@ body, html {
 	width:100%;
 }
 
+.navbar a {
+	text-decoration:none;
+}
+
 .navbar ul {
 	display:flex;
 	margin:0;
