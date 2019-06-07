@@ -2,6 +2,7 @@ body, html {
 	margin:0;
 	padding:0;
 	font-family: 'Quicksand', sans-serif;
+	line-height:30px;
 }
 
 /**************** navbar ****************/
@@ -55,7 +56,7 @@ body, html {
 
 .info {
 	text-align:center;
-	margin: 50px auto;
+	margin: 50px;
 }
 
 .info h1, .info h2{
@@ -69,12 +70,20 @@ body, html {
 .info div.textPics {
 	display:flex;
 	justify-content:space-around;
-	margin:40px;
+	margin:40px auto 30px auto;
 }
 
 .info div.textPics div.infoText {
 	margin:0 30px;
 	text-align:justify;
+}
+
+.info p {
+	font-size:1.2em;
+}
+
+.info h2 {
+	font-size:27px;
 }
 
 .info div.textPics div.infoText p {
@@ -83,6 +92,7 @@ body, html {
 
 .info div.textPics div.infoText h2 {
 	font-size:27px;
+	margin:0;
 }
 
 .info div.textPics div.imgContainer img{
@@ -130,7 +140,6 @@ body, html {
 	}
 /**************** /navbar ****************/
 
-
 }
 
 @media screen and (max-width:290px) {
@@ -149,3 +158,27 @@ body, html {
 
 	
 }
+
+/**************** Empresa ****************/
+
+@media screen and (max-width:1100px) {
+	.info div.textPics {
+		display:block;
+	}	
+
+	div.infoText {
+		margin:0 !important;
+	}
+
+	div.textPics h2 {
+		text-align:center;
+	}
+
+	div.textPics img {
+		max-width:200px;
+		max-height:200px;
+	}
+}
+
+/**************** /Empresa ****************/
+
